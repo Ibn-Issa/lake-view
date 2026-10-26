@@ -1,0 +1,17 @@
+{
+  "name": "lakeview",
+  "version": "1.0.0",
+  "description": "A country club website",
+  "license": "ISC",
+  "author": "Ibn Issa",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "sass sass/style.scss css/style.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "dependencies": {
+    "nodemon": "^1.14.10",
+    "sass": "^1.105.1"
+  }
+}

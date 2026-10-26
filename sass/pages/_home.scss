@@ -1,0 +1,23 @@
+@use "../abstract/" as *;
+
+.about-section, .amenities-section, .contact-section, .membership-section{
+    padding: 7rem 0;
+
+    @include respond("tab-port") {
+     padding: 3rem 0;
+    }
+}
+
+.about-section, .contact-section, .membership-section{
+    background-color: $grey-light-1;
+}
+
+.about-section{
+    @include respond("tab-port") {
+     margin-top: 4rem;
+    }
+}
+
+.amenities-section{
+    background-color: $white;
+}

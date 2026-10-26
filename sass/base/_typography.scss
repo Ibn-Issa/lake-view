@@ -1,0 +1,49 @@
+@use "../abstract/" as *;
+
+.heading-primary{
+    color: #fff;
+    margin-bottom: 2.5rem;
+
+    &--main{
+        font-size: 7rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: block;
+    }
+
+    &--sub{
+        display: block;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2.6rem;
+    }
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $primary-light, $secondary-light);
+    background-clip: text;
+    color: transparent;
+    transition: all 1s;
+
+    &:hover{
+        transform: skewx(4deg) skewY(2deg) scale(1.1);
+        text-shadow: .5rem 2rem 2rem rgba(#000, .2);
+    }
+}
+
+.heading-tertiary{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.para{
+    font-size: 1.6rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
